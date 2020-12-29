@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+
+
+
+
+.ContenPadre{
+    width:100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.ContenHijo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+/*CONTENEDOR INICIO, DESAPARECERA AL DAR CLICK*/
+.ContenInicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+}
+
+.ContenInicio.desactivado{
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.ContenInicio > h1{
+    font-size: 6.5rem;
+    color: #fff;
+    font-family: 'Bangers', cursive;
+    font-family: 'Allan', cursive;
+    text-align: center;
+}
+
+.ContenInicio > .Intruccion1{
+    font-size: 4rem;
+    color: #fff;
+    padding-top: 1rem;
+    font-family: 'Londrina Solid', cursive;
+    text-align: center;
+    
+}
+
+/*.ContenInicio > .Intruccion1 >span{
+    font-family: 'Bangers', cursive;
+    font-weight: 700;
+}*/
+
+.ContenInicio > .Creditos{
+    font-size: 1.8rem;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.correo{
+    width: auto;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+.correo > img{
+    width: 1.3rem;
+    height: auto;
+    margin-right: .5rem;
+}
+
+.correo > p{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.ContenHijo > .datoInteresante{
+    color: #f6f6f6;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.Fondsizegrande{
+    font-size: 7rem;
+    margin-top: 1rem;
+}
+
+.Fondsizechico{
+    font-size: 5.5rem;
+    margin-top: .5rem;
+}
+
+.Fondo1{
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Oswald', sans-serif;
+    transition: .3s;
+}
+
+
+.Fondo2{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    font-family: 'Acme', sans-serif;
+    transition: .3s;
+}
+
+
+.Fondo3{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    font-family: 'Allan', cursive;
+    transition: .3s;
+}
+
+.Fondo4{
+    background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Andika New Basic', sans-serif;
+    transition: .3s;
+}
+
+.Fondo5{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    font-family: 'Balsamiq Sans', cursive;
+    transition: .3s;
+}
+
+.Fondo6{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    font-family: 'Bangers', cursive;
+    transition: .3s;
+}
+
+.Fondo7{
+    background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Fredoka One', cursive;
+    transition: .3s;
+}
+
+.Fondo8{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Indie Flower', cursive;
+    transition: .3s;
+}
+
+.Fondo9{
+    background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    transition: .3s;
+    font-size: 4.5rem;
+}
+
+
+.Fondo10{
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Londrina Solid', cursive;
+    transition: .3s;
+}
+
+.Fondo11{
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    font-family: 'Permanent Marker', cursive;
+    transition: .3s;
+    font-size: 3rem;
+}
+
+.Fondo12{
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    font-family: 'Quantico', sans-serif;
+    transition: .3s;
+}
+
+.Fondo13{
+    background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+    font-family: 'Yellowtail', cursive;
+    transition: .3s;
+}
+
+.Fondo14{
+    background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Andika New Basic', sans-serif;
+    transition: .3s;
+}
+
+
+.Fondo15{
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Londrina Solid', cursive;
+    transition: .3s;
+}
+
+.Fondo16{
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Oswald', sans-serif;
+    transition: .3s;
+}
+
+.Fondo17{
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Acme', sans-serif;
+    transition: .3s;
+}
+
+
+.Fondo18{
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Allan', cursive;
+    transition: .3s;
+}
+
+.Fondo19{
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Andika New Basic', sans-serif;
+    transition: .3s;
+}
+
+.Fondo20{
+    background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Balsamiq Sans', cursive;
+    transition: .3s;
+}
+
+.Fondo21{
+    background: #8E0E00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Bangers', cursive;
+    transition: .3s;
+}
+
+.Fondo22{
+    background: #c21500;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Fredoka One', cursive;
+    transition: .3s;
+}
+
+.Fondo23{
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Indie Flower', cursive;
+    transition: .3s;
+}
+
+.Fondo24{
+    background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-family: 'Josefin Sans', sans-serif;
+    transition: .3s;
+    font-size: 4.5rem;
+}
+
+
+.Fondo25{
+    background: #1A2980;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Londrina Solid', cursive;
+    transition: .3s;
+}
+
+
+.frases{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 950px){
+html{
+    font-size: 14px;
+}
+
+
+}
+
+@media screen and (max-width: 850px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    html{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    html{
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (max-width: 250px){
+    html{
+        font-size: 7px;
+    }
+}
